@@ -1,3 +1,3 @@
-# [Capture] Project
+# Mobile Coffee Shop
 
-[GoogleDoc](https://docs.google.com/document/d/1IMA36qDiTmKRQ_qCu0Ib9Ss8kPy3g6wyn6sX_0V6imE/edit?usp=sharing)
+[Old Website](http://coffee1.by)
