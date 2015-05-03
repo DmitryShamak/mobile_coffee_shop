@@ -1,7 +1,7 @@
 {
   "name": "Dmitry",
   "version": "0.0.1",
-  "description": "Capture Project",
+  "description": "Mobile Coffee",
   "main": "index.js",
   "private": true,
   "dependencies": {
