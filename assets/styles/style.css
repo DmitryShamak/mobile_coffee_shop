@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+body {
+  background-color: #edeae5 !important;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: rgba(227, 208, 176, 0.8);
+  line-height: 40px;
+  z-index: 10;
+}
+nav a {
+  padding: 3px 10px;
+  color: #4b3a1c;
+}
+nav a:hover {
+  color: #170b00;
+}
+nav a:focus {
+  color: #170b00;
+  opacity: 0.7;
+}
+.wrapper {
+  margin: 0 auto !important;
+  max-width: 1024px;
+}
+[class*='filter'][class*='-contrast'] {
+  -webkit-filter: contrast(4);
+  filter: contrast(4);
+}
+section {
+  padding: 60px 20px;
+}
+section:nth-child(even) {
+  background-color: #3c1d18;
+  color: #edeae5;
+}
+section:nth-child(even) .service-block {
+  background-color: #edeae5;
+  color: #333;
+}
+section:nth-child(even) .service-block li span:before {
+  background-image: url(/assets/imgs/coffeeBean.png);
+}
+section:nth-child(even) a {
+  color: #edeae5;
+}
+section:nth-child(even) li span {
+  font-style: italic;
+  font-size: 0.8em;
+}
+section:nth-child(even) li span:before {
+  background-image: url(/assets/imgs/coffeeBeanLight.png);
+}
+section#logo {
+  background-image: url(/assets/imgs/background.jpg);
+}
+section .service-block {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+section .service-block:not(:last-child) {
+  margin-bottom: 15px;
+}
+section .service-block .content {
+  padding: 10px 15px;
+}
+section .service-block#repair .title-image {
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/imgs/gallery/IMG_20131221_181433.jpg);
+}
+section ul {
+  list-style: none;
+}
+section ul li span {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+section ul li span:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 20px;
+  height: 14px;
+  background-image: url(/assets/imgs/coffeeBean.png);
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: center;
+}
+section .services-list li {
+  display: inline-block;
+}
+section .gallery-wrapper {
+  position: relative;
+}
+section .gallery-wrapper .side-btn {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 50px;
+  margin-top: -25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  background-size: 6px;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+}
+section .gallery-wrapper .side-btn:hover {
+  background-size: 9px;
+}
+section .gallery-wrapper .side-btn.left-btn {
+  left: 0;
+  background-image: url(/assets/imgs/arrowL.png);
+}
+section .gallery-wrapper .side-btn.right-btn {
+  right: 0;
+  background-image: url(/assets/imgs/arrowR.png);
+}
+section .gallery-wrapper .gallery-image {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(http://www.nutrizionesport.com/sito%20Orazio/immagini/coffee.jpg);
+}
+section #contacts a {
+  padding: 0 5px;
+}
+footer {
+  padding: 10px 20px;
+  font-size: 0.8em;
+  color: #7b7b7b;
+  background-color: #221e1f;
+  box-sizing: border-box;
+}
+footer #copyright {
+  margin-top: 10px;
+}
