@@ -31,7 +31,8 @@ nav {
   left: 0;
   right: 0;
   height: @nav-height;
-  background-color: rgba(227, 208, 176, 0.8);
+  background-color: @main-color;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   line-height: @nav-height;
 
@@ -50,12 +51,24 @@ nav {
   		
   		opacity: 0.7;
   	}
+
+  	&.home {
+  		display: inline-block;
+  		height: 30px;
+  		width: 30px;
+  		padding: 0;
+  		margin: 2px 10px -4px;
+  		background-size: contain;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-image: url(/assets/imgs/home.png);
+  	}
   }
 }
 
 .wrapper {
 	margin: 0 auto !important;
-	max-width: 1024px;
+	//max-width: 1024px;
 }
 
 [class*='filter'] {
@@ -101,7 +114,7 @@ section {
 		}
 	}
 
-	&#logo {
+	&#home {
 		background-image: url(/assets/imgs/background.jpg);
 	}
 
@@ -205,9 +218,38 @@ section {
 		}
 	}
 
-	#contacts {
-		a {
-			padding: 0 5px;
+	&#contacts {
+		.links-wrapper {
+			margin: 25px 0;
+			.contact-link {
+			    display: inline-block;
+			    width: 45px;
+			    height: 45px;
+			    margin: 0 10px;
+			    border-radius: 45px;
+			    background-size: contain;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    
+			    &.vk {
+			    	background-image: url('/assets/imgs/contact_icons/vk.png');
+			    	&:hover {
+			    		background-image: url('/assets/imgs/contact_icons/vk_l.png');
+			    	}
+			    }
+			    &.facebook {
+			    	background-image: url('/assets/imgs/contact_icons/facebook.png');
+			    	&:hover {
+			    		background-image: url('/assets/imgs/contact_icons/facebook_l.png');
+			    	}
+			    }
+			    &.twitter {
+			    	background-image: url('/assets/imgs/contact_icons/twitter.png');
+			    	&:hover {
+			    		background-image: url('/assets/imgs/contact_icons/twitter_l.png');
+			    	}
+			    }
+			}
 		}
 	}
 }
@@ -222,7 +264,38 @@ footer {
 
 	box-sizing: border-box;
 
-	#copyright {
+	#copyright,
+	.links-wrapper {
 		margin-top: 10px;
+	}
+
+	.contact-link {
+	    display: inline-block;
+	    width: 30px;
+	    height: 30px;
+	    margin: 0 10px;
+	    border-radius: 30px;
+	    background-size: contain;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    
+	    &.vk {
+	    	background-image: url('/assets/imgs/contact_icons/vk.png');
+	    	&:hover {
+	    		background-image: url('/assets/imgs/contact_icons/vk_l.png');
+	    	}
+	    }
+	    &.facebook {
+	    	background-image: url('/assets/imgs/contact_icons/facebook.png');
+	    	&:hover {
+	    		background-image: url('/assets/imgs/contact_icons/facebook_l.png');
+	    	}
+	    }
+	    &.twitter {
+	    	background-image: url('/assets/imgs/contact_icons/twitter.png');
+	    	&:hover {
+	    		background-image: url('/assets/imgs/contact_icons/twitter_l.png');
+	    	}
+	    }
 	}
 }

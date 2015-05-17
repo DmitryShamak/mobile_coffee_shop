@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Mobile Coffee Shop</title>
-    <link type="text/css" rel="stylesheet" href="/assets/styles/style.css" />
+    
+    <link rel="stylesheet/less" type="text/css" href="/assets/styles/style.less" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 
@@ -16,18 +18,22 @@
 			<a href="#aboutus">About</a>
 			<a href="#services">Services</a>
 			<a href="#gallery">Gallery</a>
+
+			<a href="/#home" class="home"></a>
+
 			<a href="#catalog">Catalog</a>
 			<a href="#contacts">Contacts</a>
+			<a href="#map">Map</a>
 		</div>
 	</nav>
-	<section id="logo" class="text-center">
-		<a href="/generate_styles">
+	<section id="home" class="text-center">
+		<a href="/#home">
 			<img src="/assets/imgs/logo.png" />
 		</a>
 	</section>
 	<section id="aboutus">
 		<div class="wrapper text-center">
-			<h2>Добро пожаловать!</h3>
+			<h2>Добро пожаловать!</h2>
 			<p>
 				Мобильная кофейня — это новая революционная концепция кофейного бизнеса в Беларуси, которая успешно прижилась в крупнейших городах Европы, для всех ценителей качественного, ароматного, свежеприготовленного кофе. Мобильная кофейня — это «кофейня на колесах». Идея очень проста — мобильная кофейня паркуется в многолюдном месте, где бариста удовлетворяет кофейные и чайные аппетиты ценителей горячих и холодных напитков.
 			</p>
@@ -127,23 +133,41 @@
 		</div>
 	</section>
 	<section id="catalog">
-		<div class="catalog-group clearfix"></div>
-	</section>
-	<section id="contacts">
-		<p class="links-wrapper  text-center">
-			<a href="#">VK</a>
-			<a href="#">FaceBook</a>
-			<a href="#">Twitter</a>
-		</p>
-		<div class="text-center">
-			<div class="">+375 29 712-86-12 МТС</div>
-			<div class="">+375 33 636-66-99 МТС</div>
-			<div class="">e-mail: andrt@tut.by</div>
+		<div class="catalog-group clearfix">
+			<h2 class="text-center">Каталог</h2>
 		</div>
 	</section>
+	<section id="contacts">
+		<div class="text-center">
+			<h2 class="text-center">Наши контакты</h2>
+			<div class="links-wrapper  text-center">
+				<a class="contact-link vk" target="_blank" href="https://vk.com/club69294202"></a>
+				<a class="contact-link facebook" href="#"></a>
+				<a class="contact-link twitter" href="#"></a>
+			</div>
+			<div class="wrapper">
+				<div class=""><b>Tel.</b> +375 29 712-86-12 (МТС)</div>
+				<div class=""><b>Tel.</b> +375 33 636-66-99 (МТС)</div>
+				<div class=""><b>Email</b> <a href="mailto:andrt@tut.by">andrt@tut.by</a></div>
+			</div>
+		</div>
+	</section>
+	<section id="map">
+		<iframe
+		  width="100%"
+		  height="450"
+		  frameborder="0" style="border:0; margin: -40px auto;"
+		  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.731237962081!2d28.7728552!3d55.484782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c491e21d3e0a75%3A0xe9f386f2a2cb2653!2z0L_RgNC-0YHQvy4g0KTRgNCw0L3RhtC40YHQutCwINCh0LrQvtGA0LjQvdGLIDIzLCDQn9C-0LvQvtGG0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2s!4v1431753980244">
+		</iframe>
+	</section>
 
-	<footer>
-		<div id="copyright" class="text-center">
+	<footer class="clearfix">
+		<div class="links-wrapper  text-left pull-left">
+			<a class="contact-link vk" target="_blank" href="https://vk.com/club69294202"></a>
+			<a class="contact-link facebook" href="#"></a>
+			<a class="contact-link twitter" href="#"></a>
+		</div>
+		<div id="copyright" class="text-center pull-right">
 			© 2015 Мобильная кофейня "Быстрый Кофе"
 		</div>
 	</footer>
